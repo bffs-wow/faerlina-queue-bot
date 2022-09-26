@@ -32,6 +32,9 @@ API_URL=https://anou4whqbrwdpzlhjcceflrhum0shway.lambda-url.us-east-1.on.aws/v1/
 GUILD_ID=
 # Channel ID to send messages to
 OUTPUT_CHANNEL_ID=
+# if set to `1`, the timer will not post anything unless it has fresh data from the API.
+# if set to `0`, it will post messages like 'unknown queue time'
+IGNORE_OLD_MISSING_DATA=1
 ```
 
 5. Start the bot - `npm start`
@@ -42,4 +45,4 @@ OUTPUT_CHANNEL_ID=
 
 # Contribute
 
-Feel free to fork, and make this your own. The
+Feel free to fork, and make this your own. You can open a PR if you have something to add back to the main repo.
