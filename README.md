@@ -1,3 +1,10 @@
+# faerlina-queue-bot
+
+This is a very simple discord bot which reads from the community-created WOTLK Faerlina Server Queue API:
+https://anou4whqbrwdpzlhjcceflrhum0shway.lambda-url.us-east-1.on.aws/v1/queue
+
+NOTE: If this API is down, stale, stops working - the bot is useless. Don't blame the bot if it posts inaccurate/old data - everything comes from the API above.
+
 # Install the bot:
 
 https://discord.com/api/oauth2/authorize?client_id=823637927870464056&permissions=67202048&scope=bot
@@ -32,3 +39,7 @@ OUTPUT_CHANNEL_ID=
 > While the bot is running, it will poll the API every so often and post an update to the configured guild and channel. The bot also responds to `!queue` and will immediately poll the API and post the current queue data.
 >
 > During the hours of 4pm to 1am, the bot will run every 20 mins. Outside this window, it will run every hour.
+
+# Contribute
+
+Feel free to fork, and make this your own. The
