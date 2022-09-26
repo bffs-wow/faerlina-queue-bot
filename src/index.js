@@ -165,6 +165,9 @@ async function getDataAndNotification(bot, guild) {
   }
   // We have fresh queue data - create the message
   log(`Current Queue: ${latest.position}`);
+  const relativeTime = formatDistance(latest.date, new Date(), {
+    addSuffix: true,
+  });
   let message = {};
   if (latest.position == 0) {
     message = {
